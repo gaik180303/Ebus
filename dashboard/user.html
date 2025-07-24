@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Dashboard - Ebus</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h2>User Dashboard</h2>
+    <section>
+      <h3>Search Bus Location</h3>
+      <input type="text" id="source" placeholder="Enter Source" />
+      <input type="text" id="destination" placeholder="Enter Destination" />
+      <button onclick="searchBus()">Search</button>
+    </section>
+    <section>
+      <h3>Bus Arrival Info</h3>
+      <div id="busResults">
+        <!-- Dynamic search results go here -->
+      </div>
+    </section>
+    <button onclick="logout()" style="margin-top: 20px; background:#e74c3c;">Logout</button>
+  </div>
+
+  <script type="module" src="../js/user.js"></script>
+</body>
+</html>
